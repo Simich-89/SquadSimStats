@@ -1,2 +1,2 @@
 # SquadSimStats
-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
+This is Squad statistics written for Keep Calm And Ukraine server.
