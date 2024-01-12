@@ -1,0 +1,9 @@
+2023-11-23 21:11:07 [1765] :: START formStat=0; server=2;
+SELECT `id`,`startTime`,`winner` FROM `DBLog_Matches` WHERE `startTime` > '2023-10-24' AND `layerClassname` NOT LIKE ('%Invasion%') AND `layerClassname` NOT LIKE ('%Seed%') AND `layerClassname` NOT LIKE ('%Destruction%') AND `layerClassname` NOT LIKE ('%Insurgency%') ORDER BY `startTime` ASC
+SELECT * FROM DBLog_SteamUsers
+SELECT `victim`, `attacker`, `weapon`, `teamkill`, `match` FROM `DBLog_Wounds` WHERE `teamkill` IS NOT NULL AND `match` IN (156,157,161,162,169,170,171,172,173,174,175,177,187,188,189,197,198,200,201,204) ORDER BY `match`
+SELECT `victim`, `attacker` FROM `DBLog_Deaths` WHERE `match` IN (156,157,161,162,169,170,171,172,173,174,175,177,187,188,189,197,198,200,201,204)
+SELECT `reviver` FROM `DBLog_Revives` WHERE `match` IN (156,157,161,162,169,170,171,172,173,174,175,177,187,188,189,197,198,200,201,204)
+2023-11-23 21:11:08 Processing players 1833 / 100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600 1700 1800 
+2023-11-23 21:11:09 1833 done 
+2023-11-23 21:11:09 [1765] :: END formStat=0; server=2;

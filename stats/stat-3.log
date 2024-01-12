@@ -1,0 +1,2 @@
+2023-11-23 21:11:09 [1053] :: START formStat=0; server=3;
+SELECT `id`,`startTime`,`winner` FROM `DBLog_Matches` WHERE `startTime` > '2023-10-24' AND `layerClassname` NOT LIKE ('%Invasion%') AND `layerClassname` NOT LIKE ('%Seed%') AND `layerClassname` NOT LIKE ('%Destruction%') AND `layerClassname` NOT LIKE ('%Insurgency%') ORDER BY `startTime` ASC
